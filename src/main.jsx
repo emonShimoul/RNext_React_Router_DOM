@@ -6,6 +6,7 @@ import {
   createContactAction,
   deleteContactAction,
   editContactAction,
+  updateContactFav,
 } from "./actions/contactsActions";
 import Contact from "./Contact";
 import EditContact from "./EditContact";
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
         path: "contacts/:contactId",
         element: <Contact />,
         loader: getContactLoader,
+        action: updateContactFav,
       },
       {
         path: "contacts/:contactId/edit",
