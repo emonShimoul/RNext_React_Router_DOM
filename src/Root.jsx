@@ -5,7 +5,7 @@ import {
   Outlet,
   useLoaderData,
   useNavigation,
-  useSubmit,
+  useSubmit
 } from "react-router";
 
 export default function Root() {
